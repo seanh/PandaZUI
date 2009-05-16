@@ -1,8 +1,10 @@
+# PandaZUI
+
 A ZUI (Zooming User Interface) framework for 
-[Panda3D](http://www.panda3d.org/). Requires Panda3D to be installed onyour 
+[Panda3D](http://www.panda3d.org/). Requires Panda3D to be installed on your 
 system.
 
-# Features
+## Features
 
 A ZUI (Zoomable User Interface) is "a graphical environment where users can 
 change the scale of the viewed area in order to see more detail or less." The 
@@ -55,7 +57,7 @@ prototype called 'Story Cards' which is also included in the download.
 The code was originally posted to [a thread on the Panda3D 
 forums](http://www.panda3d.org/phpbb2/viewtopic.php?t=4604&highlight=).
 
-# Instructions
+## Instructions
 
 `zui/` contains the framework itself.
 
