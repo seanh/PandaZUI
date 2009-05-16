@@ -1,0 +1,118 @@
+Prototype crashed!
+
+seanh@tig:~$ cd git/sync/scratch/ZUI/
+seanh@tig:~/git/sync/scratch/ZUI$ python storymaps/story.py
+DirectStart: Starting the game.
+Warning: DirectNotify: category 'Interval' already exists
+Known pipe types:
+  glxGraphicsPipe
+(all display modules loaded.)
+:util(warning): Adjusting global clock's real time by 0.120772 seconds.
+:util(warning): Adjusting global clock's real time by -0.899977 seconds.
+:08-01-2008 10:00:38 TaskManager(warning): task eventManager ran for 4.93 seconds
+seanh@tig:~/git/sync/scratch/ZUI$ python storymaps/story.py
+DirectStart: Starting the game.
+Warning: DirectNotify: category 'Interval' already exists
+Known pipe types:
+  glxGraphicsPipe
+(all display modules loaded.)
+:util(warning): Adjusting global clock's real time by 0.220992 seconds.
+:util(warning): Adjusting global clock's real time by -0.947015 seconds.
+:08-01-2008 10:14:07 TaskManager(warning): task eventManager ran for 4.79 seconds
+:collide(error): Invalid attempt to detect collision from CollisionRay into CollisionRay!
+
+This means that a CollisionRay object attempted to test for an
+intersection into a CollisionRay object.  This intersection
+test has not yet been defined; it is possible the CollisionRay
+object is not intended to be collidable.  Consider calling
+set_into_collide_mask(0) on the CollisionRay object, or
+set_from_collide_mask(0) on the CollisionRay object.
+
+seanh@tig:~/git/sync/scratch/ZUI$ python storymaps/story.py
+DirectStart: Starting the game.
+Warning: DirectNotify: category 'Interval' already exists
+Known pipe types:
+  glxGraphicsPipe
+(all display modules loaded.)
+:util(warning): Adjusting global clock's real time by 0.413245 seconds.
+:util(warning): Adjusting global clock's real time by -0.4639 seconds.
+:08-01-2008 10:16:30 TaskManager(warning): task eventManager ran for 3.91 seconds
+:collide(error): Invalid attempt to detect collision from CollisionRay into CollisionRay!
+
+This means that a CollisionRay object attempted to test for an
+intersection into a CollisionRay object.  This intersection
+test has not yet been defined; it is possible the CollisionRay
+object is not intended to be collidable.  Consider calling
+set_into_collide_mask(0) on the CollisionRay object, or
+set_from_collide_mask(0) on the CollisionRay object.
+
+Traceback (most recent call last):
+  File "storymaps/story.py", line 364, in <module>
+    run ()
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/ShowBase.py", line 2262, in run
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 939, in run
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 877, in step
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 776, in __stepThroughList
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 696, in __executeTask
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/EventManager.py", line 59, in eventLoopTask
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/EventManager.py", line 53, in doEvents
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/EventManager.py", line 119, in processEvent
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/Messenger.py", line 240, in send
+  File "/home/seanh/git/sync/scratch/ZUI/storymaps/../zui/zcanvas.py", line 356, in drop
+    self._draggee.drop()
+  File "/home/seanh/git/sync/scratch/ZUI/storymaps/../zui/znode.py", line 494, in drop
+    zcanvas._highlightMouseOver.drop(dropped_event)
+TypeError: drop() takes exactly 1 argument (2 given)
+seanh@tig:~/git/sync/scratch/ZUI$ python storymaps/story.py
+DirectStart: Starting the game.
+Warning: DirectNotify: category 'Interval' already exists
+Known pipe types:
+  glxGraphicsPipe
+(all display modules loaded.)
+:util(warning): Adjusting global clock's real time by 0.266468 seconds.
+:util(warning): Adjusting global clock's real time by -1.24691 seconds.
+:08-01-2008 10:29:21 TaskManager(warning): task eventManager ran for 5.16 seconds
+:collide(error): Invalid attempt to detect collision from CollisionRay into CollisionRay!
+
+This means that a CollisionRay object attempted to test for an
+intersection into a CollisionRay object.  This intersection
+test has not yet been defined; it is possible the CollisionRay
+object is not intended to be collidable.  Consider calling
+set_into_collide_mask(0) on the CollisionRay object, or
+set_from_collide_mask(0) on the CollisionRay object.
+
+Traceback (most recent call last):
+  File "storymaps/story.py", line 364, in <module>
+    run ()
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/ShowBase.py", line 2262, in run
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 939, in run
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 877, in step
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 776, in __stepThroughList
+  File "linuxroot/usr/share/panda3d/direct/src/task/Task.py", line 696, in __executeTask
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/EventManager.py", line 59, in eventLoopTask
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/EventManager.py", line 53, in doEvents
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/EventManager.py", line 119, in processEvent
+  File "linuxroot/usr/share/panda3d/direct/src/showbase/Messenger.py", line 240, in send
+  File "/home/seanh/git/sync/scratch/ZUI/storymaps/../zui/zcanvas.py", line 356, in drop
+    self._draggee.drop()
+  File "/home/seanh/git/sync/scratch/ZUI/storymaps/../zui/znode.py", line 494, in drop
+    zcanvas._highlightMouseOver.drop(dropped_event)
+TypeError: drop() takes exactly 1 argument (2 given)
+seanh@tig:~/git/sync/scratch/ZUI$ python storymaps/story.py
+DirectStart: Starting the game.
+Warning: DirectNotify: category 'Interval' already exists
+Known pipe types:
+  glxGraphicsPipe
+(all display modules loaded.)
+:util(warning): Adjusting global clock's real time by 0.204951 seconds.
+:util(warning): Adjusting global clock's real time by -0.069735 seconds.
+:08-01-2008 10:29:58 TaskManager(warning): task eventManager ran for 3.71 seconds
+:collide(error): Invalid attempt to detect collision from CollisionRay into CollisionRay!
+
+This means that a CollisionRay object attempted to test for an
+intersection into a CollisionRay object.  This intersection
+test has not yet been defined; it is possible the CollisionRay
+object is not intended to be collidable.  Consider calling
+set_into_collide_mask(0) on the CollisionRay object, or
+set_from_collide_mask(0) on the CollisionRay object.
+

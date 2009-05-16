@@ -1,0 +1,48 @@
+Each level of zoom has a different purpose. Design everything at that level for
+that purpose.
+
+*   Generated filenames should be prefixed with the story's title, make it
+    easier to find stories.
+
+*   Devise task-based test cases and run through them. Then do them with other
+    people, collecting formative feedback.
+
+    - Need 'Remove' buttons on cards in the stack.
+    - Too easy to press 'Remove' and lose the contents of a card? (No undo.)
+    - Put ! before names of manually saved files
+    - Decrease the font size to make more space
+    - Add tooltips or something to explain what the buttons do? Improve the 
+      icons?
+    - Re-implement text export of stories.
+    - Need some way for cards to scroll or to easily duplicate cards if you run
+      out of space.
+
+*   Sort out the names and descriptions for the story cards. Which cards should
+    be used and which abandoned? What to do with function-level and
+    species-level definitions?
+
+*   Finish it up: implement the different versions of the interface with
+    different arrangements and behaviours of the storymaps, one with no
+    storymaps, etc.
+
+*   Make it more efficient. Most of the processing seems to be going on in the
+    collision test with the collision ray. Could remove this completely, use
+    `MouseWatcher` instead. Need to create a `MouseWatcherRegion` for each 
+    `ZNode`, then accept the messages sent by mousewatcher when the mouse enters
+    and exits a region. Would need to rewrite the part of zcanvas that uses
+    nodepath tags to find zoomable, highlightable, draggable and droppable. Also
+    need to handle region sort orders, and see if it will work with the 
+    translating of aspect2d.
+
+*   This one should be lowest priority: change the drag-drop protocol slightly
+    to enable drag-duplicate. The draggable should be asked to return a nodepath
+    that will become the draggee. Then enable duplicating StoryCards by holding
+    shift or (if I decide to use shift as general zoom quasi-mode) by middle-
+    button-dragging. See NodePath.copyTo(...) for this, although we may not need
+    it.
+    
+*   Even lower priority: need to refactor Stack and StoryMap somehow so that
+    they share code. What we need is a StoryMap that takes its BoxList as a
+    parameter, and that has an optional background frame.
+    
+*   General refactoring and unit-testing of storymaps/.
